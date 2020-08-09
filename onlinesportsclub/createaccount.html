@@ -3,50 +3,36 @@
 <head>
 	<title>Member Registration </title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta id="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-	<center>
+
 		<br>
 		<h1>Member Registration</h1>
 		<div>
-			<form action="loginMember.html" method="GET">
+			<form  class="register-form" action="index.html" >
 				<table>
 
 					<tr>
 						<td>
-							<label> Firstname:</label></td><td><input type="text" name="fname" placeholder="Enter Firstname"/>
+							<label> Firstname:</label></td><td><input type="text" id="fname" placeholder="Enter Firstname" required="" />
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label>Lastname:</label></td><td><input type="text" name="lname" placeholder="Enter Lastname"/>
+								<label>Lastname:</label></td><td><input type="text" id="lname" placeholder="Enter Lastname" required/>
 								</td>
 							</tr>
 							
 							<tr>
 								<td>
-									<label> Username:</label></td><td><input type="text" name="Username" placeholder="Enter username"/>
+									<label> Username:</label></td><td><input type="text" id="uname" placeholder="Enter username" required />
 									</td>
 								</tr>
 								<tr>
-									<td>
-										<label>   Password:</label></td>
-										<td>
-											<input type="password" name="pwd" placeholder="Enter password"/>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<label> Confirm Password:</label></td>
 											<td>
-												<input type="password" name="repwd" placeholder="enter password"/>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label>Contact no:</label></td><td><input type="text" name="phoneno" placeholder="Enter phone no (10 digit)"/>
+												<label>Contact no:</label></td><td><input type="text" id="phone" placeholder="Enter phone no (10 digit)" required />
 												</td>
 											</tr>
 											
@@ -55,13 +41,43 @@
 													<label>   Email:</label>
 												</td>
 												<td>
-													<input type="email" name="email" placeholder="abcd@gmail.com"/>
+													<input type="email" id="email" placeholder="abcd@gmail.com" required/>
 												</td>
 											</tr>
 											<tr>
+										
+
+
+								<tr>
+									<td>
+										<label>   Password:</label></td>
+										<td>
+											<input type="password"   id="pass" placeholder="Enter password" required />
+										</td>
+									</tr>
+										<tr>
+										<td>
+											
+												<label>Show Password</label>
+												<input type="checkbox" onclick="myFunction()" />
+    
+											</td>
+									
+					
+									</tr>
+									<tr>
+										<td>
+											<label> Confirm Password:</label></td>
+											<td>
+												<input type="password"  id="cpass" placeholder="enter password" required />
+											</td>					
+									</tr>
+								
+
 												<td></td>
 												<td>
-													<input type="submit" name="submit" value="register">
+													<input type="submit"  class="signupbtn" onclick="return validate()" value="register" />
+													<input type="reset" value="reset">
 													<a href="index.html">HOME</a>
 												</td>
 											</tr>
@@ -69,5 +85,8 @@
 									</form>
 								</div>
 							</center>
+
+    <script src="js/reg.js"></script>
+
 						</body>
 						</html>
