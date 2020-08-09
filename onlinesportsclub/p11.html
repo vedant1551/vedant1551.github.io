@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-     
+
   <link rel="stylesheet" href="css/style.css"/>
 
+  <link rel="stylesheet" href="css/style_galary.css"/>
 </head>
 <body>
 
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>Royal Sports Club</h1>
-<hr>
+        <h1>Royal Sports Club</h1>
+        <hr>
 
-<h2>Galary</h2>
-<form method="GET" action="index.html">
-<input type="submit" value="HOME"> 
-  
-</form>
+        <h2>Galary</h2>
+        <form method="GET" action="index.html">
+            <input type="submit" value="HOME"> 
+            
+        </form>
 
-<br>
+        <br>
+
+
 <div id="myBtnContainer">
-  <button class="btn active" > Show all</button>
-  <button class="btn" > Tennis</button>
-  <button class="btn" > Football</button>
-  <button class="btn" > VOlleyball</button>
-  <button class="btn" > Cricket</button>
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('football')"> Football</button>
+  <button class="btn" onclick="filterSelection('cricket')"> Cricket</button>
+  <button class="btn" onclick="filterSelection('volleyball')"> Volleyball </button>
+
 </div>
+
 <!-- Portfolio Gallery Grid -->
 <div class="row">
-  <div class="column ">
-      <img src="images/1.jpg"  style="width:100% ">
-     </div>
-  <div class="column ">
-    <img src="images/2.jpg"  style="width:100%">
-    </div>
-  <div class="column ">
-    <img src="images/3.jpg"  style="width:100%">
-    </div>
-  
-  <div class="column ">
-      <img src="images/r1.jpg"  style="width:100%">
-    </div>
-  <div class="column ">
-    <img src="images/r2.jpg"  style="width:100%">
-     </div>
-  <div class="column ">
-    <img src="images/r3.jpg"  style="width:100%">
-     
+  <div class="column football">
+      <img src="images/1.jpg" alt="football" style="width:100% ">
+      
+  </div>
+  <div class="column volleyball">
+    <img src="images/2.jpg" alt="volleyball" style="width:100%">
   </div>
 
+		
+  <div class="column cricket">
+    <img src="images/3.jpg" alt="cricket" style="width:100%">
+  </div> 
+
+  <div class="column volleyball">
+      <img src="images/r1.jpg" alt="volleyball" style="width:100%">
+  </div>
+      
+  </div>
+  <div class="column cricket">
+    <img src="images/r3.jpg" alt="cricket" style="width:100%">
+  </div>
+  
+ </div>
+<!-- END GRID -->
 </div>
 
 <!-- END MAIN -->
 </div>
+<script src="js/galary.js"></script>
 
 </body>
 </html>
