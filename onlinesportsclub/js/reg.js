@@ -19,6 +19,7 @@ function validate()
     else
     {
       alert("Registration Successfull");
+      window.location.replace("index.html");
       return true;
     }  
 }
