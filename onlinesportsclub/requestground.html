@@ -4,14 +4,16 @@
 	<title>Request ground</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/login.css">>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
 	<center>
 		<br>
 		<h1>Make request </h1>
 		<div>
-			<form action="memberhome.html" method="GET">
+			<form action="memberhome.html" method="POST">
 				<table>
 
 					<tr>
@@ -21,7 +23,7 @@
 						</tr>
 						<tr>
 							<td>
-								<label>duration</label>  :</td><td><input type="number" name="duration" placeholder="Enter  duration in hours "/>
+								<label>duration : </label>  </td><td><input type="number" name="duration" placeholder="Enter  duration in hours "/>
 								</td>
 							</tr>
 							
@@ -30,15 +32,15 @@
 									<label>date : </label></td><td><input type="date" name="date" placeholder="Enter Date "/>
 									</td>
 								</tr>
-								<td></td>
-								<td>
-									<input type="submit" name="submit" value="Request">
-									<a href="memberhome.html">BACK</a>
-								</td>
-							</tr>
-						</table>
-					</form>
-				</div>
-			</center>
-		</body>
-		</html>
+								<td></td><tr>
+									<td></br> <button class="btn btn-success" type="submit" name="button" value="Add">Request</button>
+									</td><td></br>
+										<a href="memberhome.html"><button class="btn btn-primary" type="Button" name="button3" >Back</button></a>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</center>
+			</body>
+			</html>
