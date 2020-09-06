@@ -1,25 +1,25 @@
 .column {
-  float: left;
-  width: 50%;
-  display: none; /* Hide all elements by default */
+	float: left;
+	width: 50%;
+	display: none; /* Hide all elements by default */
 }
 .show {
-  display: block;
+	display: block;
 }
 
 .btn {
-  border: none;
-  outline: none;
-  padding: 1.7%;
-  background-color: white;
-  cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 1.7%;
+	background-color: white;
+	cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 .btn.active {
-  background-color: #666;
-  color: white;
+	background-color: #666;
+	color: white;
 }
