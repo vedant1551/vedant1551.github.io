@@ -1,67 +1,67 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: #e2e2e2;
-  padding: 20px;
-  font-family: roboto;
+	background-color: #e2e2e2;
+	padding: 20px;
+	font-family: roboto;
 }
 
 /* Center website */
 .main {
-  max-width: 1000px;
-  margin: auto;
+	max-width: 1000px;
+	margin: auto;
 }
 
 h1 {
-  font-size: 5.9VW;
-  word-break: break-all;
+	font-size: 5.9VW;
+	word-break: break-all;
 }
 
 h2 {
-  font-size: 2.2VW;
-  word-break: break-all;
+	font-size: 2.2VW;
+	word-break: break-all;
 }
 
 
 .row {
-  margin: 10px -16px;
+	margin: 10px -16px;
 }
 
 .row,
 .row > .column {
-  padding: 20px;
+	padding: 20px;
 }
 
 .column {
-  float: left;
-  width: 50%;
+	float: left;
+	width: 50%;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .show {
-  display: block;
+	display: block;
 }
 
 .btn {
-  border: none;
-  outline: none;
-  padding: 1.7%;
-  background-color: white;
-  cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 1.7%;
+	background-color: white;
+	cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 .btn.active {
-  background-color: #666;
-  color: white;
+	background-color: #666;
+	color: white;
 }
