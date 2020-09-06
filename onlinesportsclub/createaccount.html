@@ -5,88 +5,93 @@
 	<meta charset="UTF-8">
 	<meta id="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
 
-		<br>
-		<h1>Member Registration</h1>
-		<div>
-			<form  class="register-form" action="index.html" >
-				<table>
+	<br>
+	<CENTER><h1>Member Registration</h1></CENTER>
+	<div>
+		<center>
+			<form >
+				<center>
+					<table>
 
-					<tr>
-						<td>
-							<label> Firstname:</label></td><td><input type="text" id="fname" placeholder="Enter Firstname" required="" />
-							</td>
-						</tr>
 						<tr>
 							<td>
-								<label>Lastname:</label></td><td><input type="text" id="lname" placeholder="Enter Lastname" required/>
+								<label> Firstname:</label></td><td><input type="text" id="fname" placeholder="Enter Firstname" required>
 								</td>
 							</tr>
-							
 							<tr>
 								<td>
-									<label> Username:</label></td><td><input type="text" id="uname" placeholder="Enter username" required />
+									<label>Lastname:</label></td><td><input type="text" id="lname" placeholder="Enter Lastname" required>
 									</td>
 								</tr>
-								<tr>
-											<td>
-												<label>Contact no:</label></td><td><input type="text" id="phone" placeholder="Enter phone no (10 digit)" required />
-												</td>
-											</tr>
-											
-											<tr>
-												<td>
-													<label>   Email:</label>
-												</td>
-												<td>
-													<input type="email" id="email" placeholder="abcd@gmail.com" required/>
-												</td>
-											</tr>
-											<tr>
-										
-
 
 								<tr>
 									<td>
-										<label>   Password:</label></td>
-										<td>
-											<input type="password"   id="pass" placeholder="Enter password" required />
+										<label> Username:</label></td><td><input type="text" id="uname" placeholder="Enter username" required>
 										</td>
-									</tr>
-										<tr>
-										<td>
-											
-												<label>Show Password</label>
-												<input type="checkbox" onclick="myFunction()" />
-    
-											</td>
-									
-					
 									</tr>
 									<tr>
 										<td>
-											<label> Confirm Password:</label></td>
-											<td>
-												<input type="password"  id="cpass" placeholder="enter password" required />
-											</td>					
-									</tr>
-								
+											<label>Contact no:</label></td><td><input type="text" id="phone" placeholder="Enter phone no (10 digit)" required>
+											</td>
+										</tr>
 
-												<td></td>
+										<tr>
+											<td>
+												<label>   Email:</label>
+											</td>
+											<td>
+												<input type="email" id="email" placeholder="abcd@gmail.com" required>
+											</td>
+										</tr>
+										<tr>
+
+
+
+											<tr>
 												<td>
-													<input type="submit"  class="signupbtn" onclick="return validate()" value="register" />
-													<input type="reset" value="reset">
-													<a href="index.html">HOME</a>
+													<label>   Password:</label></td>
+													<td>
+														<input type="password"   id="pass" placeholder="Enter password" required>
+													</td>
+												</tr>
+												<tr>
+													<td>
+
+														<label>Show Password</label>
+														<input type="checkbox" onclick="myFunction()" />
+
+													</td>
+
+
+												</tr>
+												<tr>
+													<td>
+														<label> Confirm Password:</label></td>
+														<td>
+															<input type="password"  id="cpass" placeholder="enter password" required />
+														</td>					
+													</tr>
+													<tr>
+
+														<td> <button class="btn btn-success" type="submit" name="button" onclick="return validate()">Register</button>
+														</td>
+
+														<td>
+															<button class="btn btn-primary" type="reset" name="button3">Reset</button>
+															<a href="index.html"><button class="btn btn-primary" type="Button" name="button2">Home</button></a>
 												</td>
 											</tr>
 										</table>
-									</form>
-								</div>
 							</center>
+						</form></center>
+					</div>
+				</center>
 
-    <script src="js/reg.js"></script>
+<script src="js/reg.js"></script>
 
-						</body>
-						</html>
+</body>
+</html>
