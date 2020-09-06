@@ -5,39 +5,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
 	<center>
 		<br>
 		<h1>Member Login </h1>
 		<div>              
-			<form action="memberhome.html" method="GET">
-				<table>
+			<form action="memberhome.html" method="POST" style="    padding-left: 20px;
+			width: 600px;">
+			<table>
+				<tr>
+					<td>
+						<label>Username:</label></td><td><input type="text" name="uname" placeholder="Enter username"/>
+						</td>
+					</tr>
+				</br>
+				<tr>
+					<td>
+						<label> Password:</label></td>
+						<td>
+							<input type="password" name="pwd" placeholder="Enter password"/>
+						</td>
+					</tr>
 					<tr>
 						<td>
-							<label>Username:</label></td><td><input type="text" name="uname" placeholder="Enter username"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label> Password:</label></td>
-								<td>
-									<input type="password" name="pwd" placeholder="Enter password"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
-								</td>
-								<td><br>
-									<input type="submit" name="submit" value="Login">
-									<a href="index.html">HOME</a>
-									<a href="#">forgot password</a>
+						</br>
+						<button class="btn btn-success" type="submit" name="button" value="Submit">Log In</button>
+						
+					</tr><br><tr><td  style="padding-top: 25px;">	<a href="index.html"><button class="btn btn-primary" type="Button" name="button2">Home</button></a>
+					</td><td  style="    padding-top: 25px;"><a href="#"><button class="btn btn-primary" type="Button" name="button3" >Forgot password</button></a>
 
-								</td>
-							</tr>
-						</table>
-					</form>
-				</div>
-			</center>
-		</body>
-		</html>
+					</td>
+
+				</tr>
+			</table>
+		</form>
+	</div>
+</center>
+</body>
+</html>
