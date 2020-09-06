@@ -1,63 +1,55 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 
 body {
-    margin: 25px;
-    text-align: center;
-    background: #D3D3D3;
-    background-size: cover;
-    width: 1000px;
+	margin: 25px;
+	text-align: center;
+	background: #D3D3D3;
+	background-size: cover;
+	width: 1000px;
 }
 
 h1 {
-    font-family: 'Passion One';
-    font-size: 2rem;
-    text-transform: uppercase;
+	font-family: 'Passion One';
+	font-size: 2rem;
+	text-transform: uppercase;
 
 }
 
 label {
-    width: 150px;
-    display: inline-block;
-    text-align: left;
-    font-size: 1.5rem;
-    font-family: 'Lato';
+	width: 150px;
+	display: inline-block;
+	text-align: left;
+	font-size: 1.5rem;
+	font-family: 'Lato';
 }
 
-input , a {
-    border: 2px solid #ccc;
-    font-size: 1.5rem;
-    font-weight: 100;
-    font-family: 'Lato';
-    padding: 10px;
+input  {
+	border: 2px solid #ccc;
+	font-size: 1.5rem;
+	font-weight: 100;
+	font-family: 'Lato';
+	padding: 10px;
 }
 
 form {
-    margin-left: 250px;
-    margin: 5px auto;
-    padding: 20px;
-    border: 5px solid #ccc;
-    width: 800px;
-    background: #eee;
+	margin-left: 250px;
+	margin: 5px auto;
+	padding: 20px;
+	border: 5px solid #ccc;
+	width: 800px;
+	background: #eee;
 }
 
 
 
 div.form-element {
-    margin-left: 250px;
-    margin: 20px 0;
+	margin-left: 250px;
+	margin: 20px ;
+
 }
 
-button {
-    padding: 5px;
-    font-size: 1.5rem;
-    font-family: 'Lato';
-    font-weight: 100;
-    background:gray;
-    color: gold;
-    border: gold;
-}
