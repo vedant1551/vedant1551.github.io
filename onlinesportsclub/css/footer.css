@@ -1,0 +1,88 @@
+footer {
+    float: left;
+    width: 100%;
+    background: #2f4f4f;
+    padding: 10px 0px;
+}
+
+footer .footer-content {
+    float: left;
+    width: 100%;
+}
+
+footer .footer-content .box .icon span {
+    color: #0000ff;
+}
+
+footer .social-links {
+    float: left;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #0000cd;
+    padding-top: 0px;
+}
+
+footer .social-links ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer .social-links ul li {
+    display: inline;
+}
+
+footer .social-links ul li a {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+footer .social-links ul li a span {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    border-color: #0000ff;
+    color: #0000ff;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    transition: all .5s ease;
+}
+
+footer .social-links ul li a span:hover {
+    background-color: #0000ff;
+    color: black;
+}
+
+footer .footer-content .box {
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+footer .footer-content .box .icon span {
+    color: #0000ff;
+    font-size: 30px;
+}
+
+footer .footer-content .box h4 {
+    font-size: 16px;
+    color: #0000ff;
+    margin: 0;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    padding: 20px 0 0px;
+}
+
+footer .footer-content .box p {
+    color: #0000ff;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 0px;
+}
