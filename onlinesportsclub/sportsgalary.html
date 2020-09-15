@@ -9,7 +9,7 @@
   
 
   <link rel="stylesheet" href="css/indexcss.css"/>
-  <link rel="stylesheet" href="css/style_galary.css"/>
+  <link rel="stylesheet" href="css/style_galary1.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
@@ -62,40 +62,18 @@
 </nav>
 <br>
 
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('football')"> Football</button>
-  <button class="btn" onclick="filterSelection('cricket')"> Cricket</button>
-  <button class="btn" onclick="filterSelection('volleyball')"> Volleyball </button>
-
-</div>
-
 <!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column football">
-	<img src="images/1.jpg" alt="football" style="width:100% ">
-	
-  </div>
-  <div class="column volleyball">
-	<img src="images/2.jpg" alt="volleyball" style="width:100%">
-  </div>
 
-  
-  <div class="column cricket">
-	<img src="images/3.jpg" alt="cricket" style="width:100%">
-  </div> 
+ <div id="buttons"></div>
+    <div id="gallery">
+      <img src="images/1.jpg" data-tags="football" alt="football1" />
+      <img src="images/2.jpg" data-tags="volleyball"alt="volleyball1" />
+      <img src="images/3.jpg" data-tags="cricket" alt="cricket1" />
+      <img src="images/r1.jpg" data-tags="volleyball" alt="volleyball2" />
+      <img src="images/r3.jpg" data-tags="cricket" alt="cricket2" /> 
+    </div>
 
-  <div class="column volleyball">
-	<img src="images/r1.jpg" alt="volleyball" style="width:100%">
-  </div>
-  
-</div>
-<div class="column cricket">
-  <img src="images/r3.jpg" alt="cricket" style="width:100%">
-</div>
 
-</div>
 <!-- END GRID -->
 </div>
 <footer style="background-color:#a9a9a9;">
@@ -133,9 +111,58 @@
 	</footer> 
 
 
-<script src="js/galary.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>(function() {
+
+  var $imgs = $('#gallery img');
+  var $buttons = $('#buttons');
+  var tagged = {};
+
+  $imgs.each(function() {
+    var img = this;
+    var tags = $(this).data('tags');
+
+    if (tags) {
+      tags.split(',').forEach(function(tagName) {
+        if (tagged[tagName] == null) {
+          tagged[tagName] = [];
+        }
+        tagged[tagName].push(img);
+      });
+    }
+  });
+
+  $('<button/>', {
+    text: 'Show All',
+    class: 'active',
+    click: function() {
+      $(this)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+      $imgs.show();
+    }
+  }).appendTo($buttons);
+
+  $.each(tagged, function(tagName) {
+    $('<button/>', {
+      text: tagName + ' (' + tagged[tagName].length + ')',
+      click: function() {
+        $(this)
+          .addClass('active')
+          .siblings()
+          .removeClass('active');
+        $imgs
+          .hide()
+          .filter(tagged[tagName])
+          .show();
+      }
+    }).appendTo($buttons);
+  });
+
+}());</script>
 </body>
 </html>
